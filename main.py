@@ -5,11 +5,11 @@ def numPrimos(numInicial,numFinal):
         numInicial = 2
         
     if (numInicial<= numFinal):
-        for entero in range(numInicial, numFinal + 1):
-            for i in range(2, entero):
-                if entero % i == 0:
+        for x in range(numInicial, numFinal):
+            for i in range(2, x):
+                if x % i == 0:
                     break
             else:
-                 listaNumerosPrimos.append(entero)
+                 listaNumerosPrimos.append(x)
     return listaNumerosPrimos    
 print (numPrimos(1,100))
